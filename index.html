@@ -1,43 +1,155 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css" media="screen">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" media="screen" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <div class="header-content">
-          
-          <a href="#" class="logo">Logo</a>
-          
-          <input type="checkbox" id="hamburger" aria-label="menu button">
-          <label for="hamburger"><span></span></label>
-          
-          <nav aria-label="main navigation">
-            <ul class="menus">
-              <li><a href="#">Home</a></li>
-              <li tabindex="0">
-                <button 
-                  type="button" 
-                  aria-haspopup="true" 
-                  aria-expanded="true" 
-                  aria-controls="dropdown1"  
-                >
-                  Services<span class="arrow"></span>   
-                </button>
-                <ul class="dropdown" id="dropdown1">
-                  <li><a href="#">Web design</a></li> 
-                  <li><a href="#">Web dev</a></li>
-                  <li><a href="#">Web</a></li>
-                </ul>
-              </li>
-              <li><a href="#">About</a></li>
-            </ul>
-          </nav>
-        </div>
-      </header> 
-</body>
+      <section class="header-content">
+        <a href="#" class="logo">Logo</a>
+
+        <input type="checkbox" id="hamburger" aria-label="menu button" />
+        <label for="hamburger"><span></span></label>
+
+        <nav aria-label="main navigation item 1 of 4">
+          <ul class="menus">
+            <li>
+              <a href="https://accessiblu.npgdev.com/our-approach/"
+                >Our Approach</a
+              >
+            </li>
+            <li>
+              <button
+                type="button"
+                aria-haspopup="true"
+                aria-expanded="true"
+                aria-controls="dropdown1"
+              >
+                Services<span class="arrow"></span>
+              </button>
+
+              <ul class="dropdown" id="dropdown1">
+                <li>
+                  <a
+                    href="https://accessiblu.npgdev.com/accessibility-ops/"
+                    aria-roledescription="Managed Accesibility Ops Link"
+                    aria-label="1 of 5"
+                    >Managed Accessibility Ops</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://accessiblu.npgdev.com/accessibility-for-digital-agencies/"
+                    aria-roledescription="Accessibility for Digital Agencies Link"
+                    aria-label="2 of 5"
+                    >Accessibility for Digital Agencies</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://accessiblu.npgdev.com/testing-audits/"
+                    aria-roledescription="Testing & Audits Link"
+                    aria-label="3 of 5"
+                    >Testing & Audits</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://accessiblu.npgdev.com/accessibility-monitoring/"
+                    aria-roledescription="Accessibility Monitoring Link"
+                    aria-label="4 of 5"
+                    >Accessibility Monitoring</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://accessiblu.npgdev.com/education-training/"
+                    aria-roledescription="Education & Training Link"
+                    aria-label="5 of 5"
+                    >Education & Training</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li>
+              <button
+                type="button"
+                aria-haspopup="true"
+                aria-expanded="true"
+                aria-controls="dropdown1"
+              >
+                About Us<span class="arrow"></span>
+              </button>
+              <ul class="dropdown" id="dropdown1">
+                <li>
+                  <a
+                    href="https://accessiblu.npgdev.com/about-accessiblu/"
+                    aria-roledescription="About Accesiblu Link"
+                    aria-label="1 of 3"
+                    >About Accessiblu</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://accessiblu.npgdev.com/our-team/"
+                    aria-roledescription="Our Team Link"
+                    aria-label="2 of 3"
+                    >Our Team</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://accessiblu.npgdev.com/contact-us/"
+                    aria-roledescription="Contact Us Link"
+                    aria-label="3 of 3"
+                    >Contact Us</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li>
+              <button
+                type="button"
+                aria-haspopup="true"
+                aria-expanded="true"
+                aria-controls="dropdown1"
+              >
+                Insights<span class="arrow"></span>
+              </button>
+              <ul class="dropdown" id="dropdown1">
+                <li>
+                  <a
+                    href="https://accessiblu.npgdev.com/blog/"
+                    aria-roledescription="Blog Link"
+                    aria-label="1 of 3"
+                    >Blog</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://accessiblu.npgdev.com/downloads/"
+                    aria-roledescription="Downloads & ebooks Link"
+                    aria-label="2 of 3"
+                    >Downloads & eBooks</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://accessiblu.npgdev.com/accessibility-information/"
+                    aria-roledescription="Accessibility Information Link"
+                    aria-label="3 of 3"
+                    >Accessibility Information</a
+                  >
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </section>
+    </header>
+  </body>
 </html>
