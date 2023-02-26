@@ -115,51 +115,51 @@ ul li button {
   top: 3.2rem;
   left: 0;
   right: 0;
-
-  /*  hide dropdown on small screens  */
-  visibility: hidden;
-  /*  smooth transitioning  */
-  transform: translateY(-1em);
-  transition: transform ease 0.2s;
-}
-
-/* toggle main dropdown */
-
-input[type="checkbox"]:checked ~ nav > ul {
-  visibility: visible;
-  transform: translateY(0);
 }
 
 .dropdown {
   padding: 2px 1.5rem;
+}
+input[type="checkbox"] {
+  opacity: 0;
+  /* ... */
+}
+input[type="checkbox"]:focus + label::before {
+  box-shadow: 0 0 20px black;
+}
+.menus {
+  /* ... */
+  /* hide dropdown on small screens */
+  visibility: hidden;
+}
+/* toggle main dropdown */
+
+input[type="checkbox"]:checked ~ nav > ul {
+  visibility: visible;
+}
+.dropdown {
+  /* ... */
   height: 0;
   overflow: hidden;
+}
+li:focus-within .dropdown {
+  height: 135px;
+}
+.menus {
+  /* ... */
+  /* smooth transitioning */
+  transform: translateY(-1em);
+  transition: transform ease 0.2s;
+}
+input[type="checkbox"]:checked ~ nav > ul {
+  /* ... */
+  transform: translateY(0);
+}
+.dropdown {
+  /* ... */
   transition: height ease 0.2s;
 }
-
-li:focus-within .dropdown {
-  height: auto;
-}
-
-.arrow {
-  width: 0.5em;
-  height: 0.5em;
-  display: inline-block;
-  vertical-align: middle;
-  border-left: 0.15em solid currentColor;
-  border-bottom: 0.15em solid currentColor;
-  transform: rotate(-45deg);
-  margin-left: 0.38em;
-  margin-top: -0.25em;
-  transition: transform 100ms ease-in-out;
-}
-
-li:focus-within > button > .arrow {
-  transform: rotate(-225deg);
-  margin-top: 4px;
-}
-
-/* MEDIA QUERIES  */
+/* MEDIA QUERIES */
 @media (min-width: 640px) {
   .header-content {
     display: flex;
@@ -202,11 +202,26 @@ li:focus-within > button > .arrow {
   }
 
   ul li:hover .dropdown {
-    height: auto;
+    height: 135px;
   }
 
   ul li:hover > button > .arrow {
     transform: rotate(-225deg);
     margin-top: 4px;
   }
+}
+.arrow {
+  width: 0.5em;
+  height: 0.5em;
+  display: inline-block;
+  vertical-align: middle;
+  border-left: 0.15em solid currentColor;
+  border-bottom: 0.15em solid currentColor;
+  transform: rotate(-45deg);
+  margin-left: 0.38em;
+  margin-top: -0.25em;
+}
+li:focus-within > button > .arrow {
+  transform: rotate(-225deg);
+  margin-top: 4px;
 }
